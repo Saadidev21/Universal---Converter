@@ -1,19 +1,34 @@
-<div class="container">
-  <h1>🔁 Universal Converter</h1>
-  <p class="subtitle">Paste any text with measurements. Get instant conversions.</p>
-  
-  <textarea id="inputText" placeholder="Examples: 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Universal Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart universal converter - paste any text with measurements or currency and get instant conversions">
+</head>
+<body>
+    <div class="container">
+        <h1>🔁 Universal Converter</h1>
+        <p class="subtitle">Paste any text with measurements or currency. Get instant conversions.</p>
+        
+        <textarea id="inputText" placeholder="Examples: 
 • I walked 5 miles
 • Recipe: 2 cups of flour  
 • 10 kilos of rice
 • 80°F weather
-• 5 pounds of apples"></textarea>
-  
-  <button onclick="convertText()">Convert Everything</button>
-  
-  <div id="results"></div>
-  
-  <div class="supported">
-    <p><strong>Supported conversions:</strong> miles/km, pounds/kg, cups/ml, fahrenheit/celsius</p>
-  </div>
-</div>
+• 5 pounds of apples
+• $50 to EUR
+• 12 inches to cm
+• 100 USD to PKR"></textarea>
+        
+        <button onclick="convertText()">Convert Everything</button>
+        
+        <div id="results"></div>
+        
+        <div class="supported">
+            <p><strong>Supported:</strong> miles/km, feet/meters, inches/cm, pounds/kg, cups/ml, fahrenheit/celsius, USD/EUR/GBP/INR/JPY/PKR</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
